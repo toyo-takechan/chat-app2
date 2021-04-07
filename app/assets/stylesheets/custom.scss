@@ -27,4 +27,27 @@
   width: 100%;
   height: 100px;
   background-color: yellow;
+  display: flex;
+  &-left{
+    width: 350px;
+    background-color: palevioletred;
+  }
+  &-middle{
+    width: calc(100% - 700px);
+    background-color: blue;
+  }
+  &-right{
+    width: 350px;
+    background-color: blanchedalmond;
+    &-link {
+      display: flex;
+      list-style: none;
+    }
+    &-link li{
+      padding-left: 10px;
+    }
+    &-link li a{
+      text-decoration: none;
+    }
+  }
 }
