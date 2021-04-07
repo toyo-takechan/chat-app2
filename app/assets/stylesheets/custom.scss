@@ -1,0 +1,30 @@
+// ここからheader
+.header{
+  width: 100%;
+  height: 100px;
+  background-color: yellowgreen;
+}
+
+.container{
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 200px);
+  background-color: orchid;
+  .aside{
+    width: 350px;
+    background-color: paleturquoise;
+  }
+}
+
+// ここからaside
+.aside {
+  background-color: orange;
+  width: 300px;
+}
+
+// ここからfooter
+.footer{
+  width: 100%;
+  height: 100px;
+  background-color: yellow;
+}
