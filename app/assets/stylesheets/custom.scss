@@ -9,7 +9,9 @@
   display: flex;
   width: 100%;
   min-height: calc(100vh - 200px);
-  background-color: orchid;
+  // background-color: orchid;
+  background-image: image_url('jitensha1.jpeg');
+  background-size: center top,100% auto;
   .aside{
     width: 350px;
     background-color: paleturquoise;
@@ -20,6 +22,10 @@
 .aside {
   background-color: orange;
   width: 300px;
+}
+
+// ここから　home
+.wrapper{
 }
 
 // ここからfooter
