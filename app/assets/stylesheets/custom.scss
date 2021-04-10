@@ -1,8 +1,15 @@
 // ここからheader
+body{
+  // background-image: image_url('jitensha1.jpeg');
+  background-image: image_url('sora1.jpeg');
+  // background-size: contain;
+  background-size: cover;
+
+}
 .header{
   width: 100%;
   height: 100px;
-  background-color: yellowgreen;
+  // background-color: yellowgreen;
 }
 
 .container{
@@ -10,41 +17,36 @@
   width: 100%;
   min-height: calc(100vh - 200px);
   // background-color: orchid;
-  background-image: image_url('jitensha1.jpeg');
-  background-size: center top,100% auto;
   .aside{
     width: 350px;
-    background-color: paleturquoise;
+    // background-color: paleturquoise;
   }
 }
 
-// ここからaside
-.aside {
-  background-color: orange;
-  width: 300px;
-}
 
 // ここから　home
 .wrapper{
+  text-align: center;
+  margin: 0 auto;
 }
 
 // ここからfooter
 .footer{
   width: 100%;
   height: 100px;
-  background-color: yellow;
+  // background-color: yellow;
   display: flex;
   &-left{
     width: 350px;
-    background-color: palevioletred;
+    // background-color: palevioletred;
   }
   &-middle{
     width: calc(100% - 700px);
-    background-color: blue;
+    // background-color: blue;
   }
   &-right{
     width: 350px;
-    background-color: blanchedalmond;
+    // background-color: blanchedalmond;
     &-link {
       display: flex;
       list-style: none;
