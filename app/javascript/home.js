@@ -1,4 +1,4 @@
 
   $(function() {
-    $("h2").fadeOut();
+    $(".imagefadeout").fadeOut(3000);
   });

@@ -34,13 +34,20 @@ body{
     width: 100%;
     text-align: center;
     color: white;
+    position: relative;
     // min-height: calc(100% - 200px);
     // min-height: calc(100vh - 200px);
     // margin: 0 auto;
+    &-title{
+      font-size: 45px;
+      opacity: 0.7;
+    }
   }
-  .main-title{
-    font-size: 45px;
-    opacity: 0.7;
+  .imagefadeout{
+    display:　inline;
+    position: absolute;
+    top: 　0px;
+    left: 0px;
   }
 }
 // ここからfooter
