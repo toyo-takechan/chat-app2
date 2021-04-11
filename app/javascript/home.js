@@ -1,4 +1,4 @@
 
-  // $(function() {
-  //   $("h2").fadeOut();
-  // });
+  $(function() {
+    $("h2").fadeOut();
+  });
