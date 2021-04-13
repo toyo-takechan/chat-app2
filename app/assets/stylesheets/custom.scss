@@ -39,8 +39,15 @@ body{
     // min-height: calc(100vh - 200px);
     // margin: 0 auto;
     &-title{
+      display: none;
       font-size: 45px;
       opacity: 0.7;
+    }
+    &-title2{
+      display: none;
+    }
+    &-title-p{
+      display: none;
     }
   }
   .imagefadeout{
