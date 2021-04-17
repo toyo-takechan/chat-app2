@@ -59,3 +59,15 @@ $(function () {
     });
 
 });
+
+$(function() {
+  // 「#login-show」要素に対するclickイベントを作成してください // modal - btn2
+  $('#modal-show').click(function() {
+    $('#modal-test').fadeIn();
+  });
+   // 「.close-modal」要素にclickイベントを設定してください
+  $('.close-modal').click(function(){
+    $('#modal-test').fadeOut();
+  });
+});
+

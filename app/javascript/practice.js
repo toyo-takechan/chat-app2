@@ -50,3 +50,11 @@
 //     });
 
 // });
+
+// $(function () {
+//   // 「#login-show」要素に対するclickイベントを作成してください
+//   $('#login-show').click(function () {
+//     $('modal-btn2').fadeIn();
+//   });
+
+// });
