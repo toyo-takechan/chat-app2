@@ -1,19 +1,39 @@
 <div class="footer">
-  <div class="footer-left"></div>
-  <div class="footer-middle">
-    <span class="fa fa-facebook"></span>
-    Facebookへ
-    <span class="btn twitter"><span class="fa fa-twitter"></span>
-    Twitterへ
-  </div>
-  <div class="footer-right">
-    <p class="footer-right-logo">
+  <div class="footer-left">
+     <p class="footer-left-logo">
         <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "100px"), root_url, data: {"turbolinks" => false} %>
-      </p>
+    </p>
+    <ul class="footer-left-ul">
+      <li class="footer-left-ul-li" ><%= link_to "プライバシーポリシー", "#" %></li>
+      <li class="footer-left-ul-li" ><%= link_to "利用規約", "#" %></li>
+    <ul>
+  </div>
+
+  <div class="footer-middle">
+    <%= link_to "#" do %>
+      <i class="fab fa-facebook fa-2x"></i>
+      <span class="#">Facebookへ</span>
+    <% end%>
+    <%= link_to "#" do %>
+    <i class="fab fa-twitter fa-2x"></i>
+    <span class="#" >Twitterへ</span>
+    <% end%>
+    <%= link_to "#" do %>
+    <i class="fab fa-google fa-2x"></i>
+     <span class="#" >Googleへ</span>
+    <% end%>
+    <%= link_to "#" do %>
+    <i class="fab fa-instagram-square fa-2x"></i>
+     <span class="#" >インスタグラムへ</span>
+    <% end%>
+  </div>
+
+  <div class="footer-right">
+   
     <ul class="footer-right-link">
-      <li><%= link_to "自己紹介", about_path, data: {"turbolinks" => false} %> </li>
       <li><%= link_to 'ホーム', root_url, data: {"turbolinks" => false} %> </li>
-      <li><%= link_to 'help', help_path %> </li>
+      <li><%= link_to "自己紹介", about_path, data: {"turbolinks" => false} %> </li>
+      <li><%= link_to 'お問合せ', help_path %> </li>
       <li><%= link_to '遊び', practice_path, data: {"turbolinks" => false} %> </li>
     </ul>
   </div>

@@ -2,14 +2,12 @@
 body{
   // background-image: image_url('jitensha1.jpeg');
   background-image: image_url('sora1.jpeg');
-  // background-size: contain;
   background-size: cover;
-  // position: relative;
 
 .header{
   width: 100%;
   height: 100px;
-  background-color: yellowgreen;
+  // background-color: yellowgreen;
   display: flex;
   align-items: center;
   &-logo{
@@ -22,17 +20,37 @@ body{
   &-main{
     flex: 1;
     text-align: center;
+    &-form{
+  
+    }
   }
   &-right{
     width: 300px;
-    line-height: 100px;
+    height: 80px;
+    line-height: 80px;
+    padding: 5px;
+    align-items: center;
     &-ul{
       display: flex;
       list-style: none;
+      color: #fff;
+      height: 60px;
       &-li{
         margin: 0 auto;
         padding: 0 10px;
+        cursor: pointer;
+        line-height: 60px;
       }
+      &-li a{
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+    &-btn{
+      background-color: #5dca88;
+      border-radius: 3px;
+      box-shadow: 0px 5px #279C56;
+
     }
   }
 }
@@ -41,17 +59,11 @@ body{
   display: flex;
   width: 100%;
   min-height: calc(100vh - 200px);
-  background-color: orchid;
-  // min-height: 100%;
+  // background-color: orchid;
   height: auto;
-  /* フッターの高さ分だけ、ネガティブインデントを指定 */
-  // margin: 0 auto -100px;
-  /* フッターの高さ分だけ、パディングを指定 */
-  // padding: 0 0 100px;
   .aside{
     width: 350px;
-    background-color: paleturquoise;
-    // min-height: calc(100% - 200px);
+    // background-color: paleturquoise;
   }
   
   // ここから　home
@@ -60,9 +72,6 @@ body{
     text-align: center;
     color: white;
     position: relative;
-    // min-height: calc(100% - 200px);
-    // min-height: calc(100vh - 200px);
-    // margin: 0 auto;
     &-title{
       display: none;
       font-size: 45px;
@@ -156,25 +165,46 @@ body{
 // ここからfooter
 .footer{
   width: 100%;
-  // height: 100px;
-  // position: fixed;
-  // bottom: 0;
-  // position: absolute;/*←絶対位置*/
-  // bottom: 0; /*下に固定*/
-  background-color: yellow;
+  background-color: rgb(32, 32, 32);
   display: flex;
+  color: #ccc;
   &-left{
+    display: flex;
     width: 350px;
-    background-color: palevioletred;
+    // background-color: palevioletred;
+    &-ul {
+      &-li{
+        list-style: none;
+      }     
+      &-li a{
+        color: white;
+        text-decoration: none;
+    }
+    }
   }
   &-middle{
     // width: 300px;
     width: calc(100% - 700px);
-    background-color: blue;
+    // background-color: blue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    &-span a{
+      text-decoration: none;
+      color: white
+    }
+    /*Twitter*/
+    .fa-twitter{color:#1da1f2;}
+    /*Facebook*/
+    .fa-facebook{color:#3b5998;}
+    /*instagram*/
+    .fa-instagram-square{color:#e1306c;}
+    .fa-google{ color: plum}
   }
+  
   &-right{
     width: 350px;
-    background-color: blanchedalmond;
+    // background-color: blanchedalmond;
     &-link {
       display: flex;
       list-style: none;
@@ -184,6 +214,7 @@ body{
     }
     &-link li a{
       text-decoration: none;
+      color:white;
     }
   }
 }

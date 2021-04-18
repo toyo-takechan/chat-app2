@@ -4,12 +4,15 @@
   </div>
   <div class="header-left"></div>
   <div class="header-main">
-    検索バー
+    <form class="header-main-form">
+      <input type="serch"  name="serch"  placeholder="検索バー">
+      <input type="submit" name="submit" value="検索">
+    </form>
   </div>
   <div class="header-right">
-    <ul class="header-right-ul">
-    <li class="header-right-ul-li">ログイン</li>
-    <li class="header-right-ul-li">新規登録</li>
+    <ul class="header-right-ul ">
+    <li class="header-right-ul-li header-right-btn"><%= link_to "ログイン", "#" %></li>
+    <li class="header-right-ul-li header-right-btn"><%= link_to "新規登録", "#" %></li>
     </ul>
   </div>
 </div>
