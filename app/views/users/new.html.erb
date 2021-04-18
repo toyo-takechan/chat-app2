@@ -1,0 +1,10 @@
+<div class="form">
+  <h1>新規登録ページ</h1>
+  <%= form_with model: @user, local: true do |f| %>
+  <p><%= f.label :name, class:"form-control" %>
+    <%= f.text_field :name, class:"form-control" %></p>
+  <p><%= f.label :email, class:"form-control" %>
+    <%= f.email_field :email, class:"form-control"%></p>
+  <p><%= f.submit"新規登録", class:"form-btn" %><p>
+  <% end %>
+</div>
