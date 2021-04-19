@@ -92,21 +92,7 @@ body{
     top: 　0px;
     left: 0px;
   }
-  // ここからフォーム
-  .form{
-    width: 100px;
-    text-align: center;
-    flex: 1;
-    padding-top: 30px;
-    &-control{
-    min-width: 400px;
-    font-size: 24px;
-    }
-    &-btn{
-    min-width: 150px;
-    font-size: 24px;
-    }
-  }
+  
 }
 
 // ここからpractce
@@ -178,6 +164,41 @@ body{
   }
 }
 
+// ここからフォーム
+  .form{
+    // width: 100px;
+    text-align: center;
+    flex: 1;
+    padding-top: 30px;
+    &-control{
+      min-width: 400px;
+      // width: 40%;
+      font-size: 24px;
+      border-radius: 8px;
+      border: 1px solid #bbb;
+      &-name{
+        min-width: 400px;
+        width: 603px;
+      }
+      &-email{
+        min-width: 400px;
+        width: 605px;
+      }
+      &-password{
+        min-width: 400px;
+        width: 558px;
+      }
+      &-password_confirmation{
+        // min-width: 400px;
+      }
+    }
+    &-btn{
+      min-width: 200px;
+      font-size: 24px;
+      border-radius: 8px;
+      border: 1px solid #bbb;
+    }
+  }
 
 // ここからfooter
 .footer{

@@ -2,9 +2,13 @@
   <h1>新規登録ページ</h1>
   <%= form_with model: @user, local: true do |f| %>
   <p><%= f.label :name, class:"form-control" %>
-    <%= f.text_field :name, class:"form-control" %></p>
-  <p><%= f.label :email, class:"form-control" %>
-    <%= f.email_field :email, class:"form-control"%></p>
+    <%= f.text_field :name, class:"form-control form-control-name" %></p>
+  <p><%= f.label :email, class:"form-control " %>
+    <%= f.email_field :email, class:"form-control form-control-email"%></p>
+  <p><%= f.label :password, class: "form-control" %>
+     <%= f.password_field :password, class: "form-control form-control-password" %></p>
+  <p><%= f.label :password_confirmation, class: "form-control" %>
+     <%= f.password_field :password_confirmation, class: "form-control form-control-password_confirmation" %></p>
   <p><%= f.submit"新規登録", class:"form-btn" %><p>
   <% end %>
 </div>
