@@ -1,0 +1,12 @@
+<% if @user.errors.any? %>
+  <div id="#">
+    <div class="error alert-warning">
+      エラーの数<%= @user.errors.count %>error
+    </div>
+    <div class="error alert-warning">
+      <% @user.errors.full_messages.each do |m|%>
+        <li><%= m %></li>
+      <% end %>
+    </div>
+  </div>
+<% end %>

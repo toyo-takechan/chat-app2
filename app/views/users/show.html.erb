@@ -1,6 +1,6 @@
 <div class="main">
-  <h1>Users#show</h1>
-  <p>Find me in app/views/users/show.html.erb</p>
+  <h1 class="main-show-h1">マイページへようこそ</h1>
+  <p class="main-show-p">あなただけのページです。</p>
+  <h1><%= gravatar_for(@user) %></h1>
   <h1><%= @user.name %></h1>
-  <h1><%= @user.email %></h1>
 </div>
