@@ -12,6 +12,7 @@
   <div class="header-right">
     <ul class="header-right-ul ">
     <% if logged_in? %>
+      <li class="header-right-ul-li header-right-btn"><%= link_to "全てのユーザー", users_path %></li>
       <li class="header-right-ul-li header-right-btn"><%= link_to "更新", edit_user_path(current_user) %></li>
       <li class="header-right-ul-li header-right-btn"><%= link_to "ログアウト", logout_path, method: :delete %></li>
       <% else %>
