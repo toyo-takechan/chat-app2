@@ -108,8 +108,9 @@ body{
   }
   // ここからusersindex
   .users {
+    text-align: left;
     list-style: none;
-    margin: 0;
+    // margin: 0;
     li {
       overflow: auto;
       padding: 10px 0;
