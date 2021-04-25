@@ -3,4 +3,13 @@
   <p class="main-show-p">あなただけのページです。</p>
   <h1><%= gravatar_for(@user) %></h1>
   <h1><%= @user.name %></h1>
+  <div class="#">
+    <% if @user.posts.any? %>
+    <h3>投稿数(<%= @user.posts.count %>)</h3>
+    <ol class="posts">
+      <%= render @posts %>
+    </ol>
+      <%= paginate @posts %>
+    <% end %>
+  </div>
 </div>
