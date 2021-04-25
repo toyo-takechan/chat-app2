@@ -1,7 +1,14 @@
 <div class=" header">
-  <div class="header-logo">
-    <%= image_tag('chat1.jpeg', alt:"logo", width:"80px")%>
-  </div>
+  <% if logged_in? %>
+    <div class="header-logo">
+      <%= link_to image_tag('chat1.jpeg', alt:"logo", width:"100%"), new_post_path%>
+    </div>
+    <div class="header-right-btn"><%= link_to "新規投稿" ,new_post_path %></div>
+  <% else %>
+      <div class="header-logo">
+      <%= link_to image_tag('chat1.jpeg', alt:"logo", width:"100%"), root_url %>
+    </div>
+  <% end %>
   <div class="header-left"></div>
   <div class="header-main">
     <form class="header-main-form">

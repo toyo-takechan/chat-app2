@@ -11,8 +11,8 @@ body{
   display: flex;
   align-items: center;
   &-logo{
-    width: 100px;
-    padding: 10px;
+    width: 80px;
+    padding: 10px 0px 10px 10px;
   }
   &-left{
     width: 100px;
@@ -55,6 +55,7 @@ body{
     }
     &-btn a {
       display: block;
+      text-decoration: none;
     }
   }
 }
@@ -150,6 +151,7 @@ body{
     float: left;
     margin-right: 10px;
     margin-top: 5px;
+    margin-left: 200px;
   }
   span.image {
   margin-top: 10px;
@@ -261,6 +263,9 @@ body{
       }
       &-password_confirmation{
         // min-width: 400px;
+      }
+      &-area{
+        min-height: 500px;
       }
     }
     &-btn{

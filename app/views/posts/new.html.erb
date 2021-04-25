@@ -1,0 +1,15 @@
+<div class ="form">
+  <h1>新規投稿ページ</h1>
+  <p><%= link_to gravatar_for(current_user, size: 50), current_user %></p>
+  <h1><%= current_user.name %></h1>
+
+
+  <%= form_with(model: @post, local: true) do |f| %>
+    <%# <%= render 'shared/error_messages'%> 
+
+    <%= f.text_area :content, class: "form-control form-control-area", placeholder: "文章を投稿してください。" %>
+
+    <p><%= f.submit "新規投稿" , class: "form-btn" %></p
+  <% end %>
+  
+</div>
