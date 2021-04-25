@@ -9,7 +9,11 @@
 
     <%= f.text_area :content, class: "form-control form-control-area", placeholder: "文章を投稿してください。" %>
 
-    <p><%= f.submit "新規投稿" , class: "form-btn" %></p
+    <%= f.submit "新規投稿" , class: "form-btn" %>
+    <span class="image">
+      <%= f.file_field :image, accept: "image/jpeg,image/gif,image/png" %>
+    </span>
+
   <% end %>
   
 </div>
