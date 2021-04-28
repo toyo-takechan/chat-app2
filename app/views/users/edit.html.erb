@@ -1,7 +1,7 @@
 <div class="form">
   <h1>ユーザー更新ページ</h1>
   <%= form_with model: @user, local: true do |f| %>
-  <%= render 'shared/error_messages' %>
+  <%= render 'shared/error_messages', object: f.object %>
   
   <p><%= f.label :name, class:"form-control" %>
     <%= f.text_field :name, class:"form-control form-control-name" %></p>
