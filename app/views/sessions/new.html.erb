@@ -1,6 +1,7 @@
 <div class="form">
   <h1>ログイン</h1>
   <%= form_with(url:login_path, scope: :session, local: true) do |f| %>
+    <%# <%= render 'shared/error_messages', object: f.object%> 
   
   <p><%= f.label :email, class:"form-control"%>
      <%= f.email_field :email, class:"form-control form-control-email" %></p>

@@ -1,12 +1,12 @@
 <% if object.errors.any? %>
-  <div id="#">
-    <div class="error alert-warning">
-      エラーの数<%= object.errors.count %>error
+  <div id="error">
+    <div class=" error-warning">
+      エラーの数<%= object.errors.count %>error<br>
     </div>
-    <div class="error alert-warning">
+      <ul >
       <% object.errors.full_messages.each do |m|%>
-        <li><%= m %></li>
+        <li class=" error-message"><%= m %></li>
       <% end %>
-    </div>
+      </ul>
   </div>
 <% end %>

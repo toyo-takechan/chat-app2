@@ -266,7 +266,7 @@ body{
       }
       &-area{
         min-height: 400px;
-        margin-left: 0px;
+        // margin-left: 0px;
       }
     }
     &-btn{
@@ -275,7 +275,7 @@ body{
       border-radius: 8px;
       border: 1px solid #bbb;
       background-color: #5dca88;
-      margin-left: 100px;
+      // margin-left: 100px;
     }
   }
   #post.image{
@@ -353,13 +353,16 @@ body{
   }
  }
 //  ここからshared エラー
- .error {
+ #error {
    color: red;
-   ul {
-    color: red;
-    margin: 0 0 30px 0;
-  }
+   &-warning{
+   }
+  
  }
+ #error li{
+   list-style: none;
+ }
+ 
 
 //  ここからflash
  .alert{

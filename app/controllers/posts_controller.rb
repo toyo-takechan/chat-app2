@@ -13,6 +13,7 @@ class PostsController < ApplicationController
       flash[:info] = "投稿に成功しました。"
       redirect_to user_path(current_user)   
     else
+      @feed_items = current_user.feed.page(params[:page])
      render 'new' 
     end
   end
