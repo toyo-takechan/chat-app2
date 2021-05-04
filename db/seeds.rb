@@ -8,19 +8,21 @@ User.create!(name:  "Example User",
              activated_at: Time.zone.now)
 
 # 追加のユーザーをまとめて生成する
-50.times do |n|
+30.times do |n|
   name = Faker::Name.name
   email = "example-#{n+1}@railstutorial.org"
   password = "password"
   User.create!(name: name,
               email: email,
               password: password,
-              password_confirmation: password)
+              password_confirmation: password,
+              activated: true,
+              activated_at: Time.zone.now)
 end
 
 # ユーザーの一部を対象にポストを生成する
 users = User.order(:created_at).take(6)
-32.times do
+12.times do
   content = Faker::Lorem.sentence(word_count: 5)
   users.each { |user| user.posts.create!(content: content) }
 end

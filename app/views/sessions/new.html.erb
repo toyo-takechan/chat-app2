@@ -1,13 +1,15 @@
 <div class="form">
   <h1>ログイン</h1>
   <%= form_with(url:login_path, scope: :session, local: true) do |f| %>
-    <%# <%= render 'shared/error_messages', object: f.object%> 
+    <%# <%= render 'shared/error_messages', object: f.object %>
   
   <p><%= f.label :email, class:"form-control"%>
      <%= f.email_field :email, class:"form-control form-control-email" %></p>
   
-  <p><%= f.label :password, class:"form-control" %>
+  <p><%= f.label :password, class:"form-control" %>    
     <%= f.password_field :password, class:"form-control  form-control-password" %></p>
+
+    <span><%= link_to "パスワードを忘れた方はこちら", password_resets_new_path%></span>
 
     <%= f.label :remember_me, class:"checkbox inline" do %>
       <%= f.check_box :remember_me %>
